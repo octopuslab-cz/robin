@@ -1,3 +1,3 @@
 # Robin
 
-This a demo project for ESP32 OctopusLab framework.
+This is a demo project for ESP32 OctopusLab framework.

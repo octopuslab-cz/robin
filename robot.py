@@ -24,11 +24,12 @@ ws = Rgb(pinout.WS_LED_PIN,io_conf.get('ws'))
 ir = Pin(pinout.DEV1_PIN, Pin.IN)
 
 print('oled init start')
-OLED_I2C_ADDRESS = 60  # defaul is 0x3c = 60, alternative 35
+# OLED_I2C_ADDRESS = 60  # defaul is 0x3c = 60, alternative 35
 oled = None
 while not oled:
     try:
-        oled = oled_init(addr=OLED_I2C_ADDRESS)
+        # oled = oled_init(addr=OLED_I2C_ADDRESS)
+        oled = oled_init()
         sleep_ms(500)
     except OSError as e:
         print(e)
